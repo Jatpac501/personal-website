@@ -72,8 +72,7 @@ header .nav .menu a:hover {
 .box1 {
   width: 100%;
   height: auto;
-
-  animation: bg 80s ease infinite;
+  animation: bg 90s ease infinite;
 }
 @keyframes bg {
   10% {
@@ -104,7 +103,7 @@ header .nav .menu a:hover {
     background-image: url(https://source.unsplash.com/random/1920x1080/?holo,portain);
   }
   100% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?liquid,holo,material);
+    background-image: url(https://source.unsplash.com/random/1920x1080/?liquid,holo);
   }
 }
 .box1 .main {
