@@ -13,7 +13,7 @@ body {
 	background: #DCDCC6;
   color: #000;
   animation-name: appear;
- animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 header {
@@ -72,8 +72,43 @@ header .nav .menu a:hover {
 .box1 {
   width: 100%;
   height: auto;
+
+  animation: bg 80s ease infinite;
+}
+@keyframes bg {
+  10% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?light,city);
+  }
+  20% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?landscape);
+  }
+  30% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?night,city);
+  }
+  40% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?cyberpunk,landscape);
+  }
+  50% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?moon);
+  }
+  60% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?vulcano);
+  }
+  70% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?dark,castle);
+  }
+  80% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?virtual,city);
+  }
+  90% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?holo,portain);
+  }
+  100% {
+    background-image: url(https://source.unsplash.com/random/1920x1080/?liquid,holo,material);
+  }
 }
 .box1 .main {
+  background: rgba(220, 220, 198, 0.1);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -89,16 +124,18 @@ header .nav .menu a:hover {
 .box1 .main .text {
   display: flex;
   flex-direction: column;
-  pa
 }
 .box1 .main .text .student {
   font-size: 60px;
   font-weight: bold;
+  background: linear-gradient(45deg, #5c8499, #3f5c6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .box1 .main .text .name {
   font-size: 120px;
   font-weight: bolder;
-  background: linear-gradient(45deg, #83322c, #5c8499);
+  background: linear-gradient(45deg, #83322c, #4d1d19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
