@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Russo One';
+  font-family: 'Oswald';
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,15 @@ body {
 	background: #DCDCC6;
   color: #000;
 }
+.page {
+  position: absolute;
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  padding-top: 200px;
+  left: 95%;
+  z-index: 10;
+}
+
 header {
   color: #fff;
   position: fixed;
@@ -27,6 +37,7 @@ header {
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 10px;
+  z-index: 10;
 }
 header .logo img {
   position: relative;
@@ -56,15 +67,6 @@ header .nav .menu a:hover {
   transition: 0.3s;
 }
 
-.page {
-  font-family: 'Russo One';
-  position: absolute;
-  font-size: 30px;
-  writing-mode: vertical-rl;
-  padding-top: 200px;
-  left: 95%;
-}
-
 .box1 {
   width: 100%;
   height: auto;
@@ -72,7 +74,7 @@ header .nav .menu a:hover {
   animation: bg 90s ease infinite;
 }
 .box1 .main {
-  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px) grayscale(30%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -242,6 +244,15 @@ header .nav .menu a:hover {
 }
 
 @media (max-width:700px) {
+  .page {
+    position: absolute;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    padding-top: 100px;
+    left: 90%;
+    z-index: 10;
+  }
+
   header {
     color: #fff;
     position: fixed;
@@ -284,14 +295,7 @@ header .nav .menu a:hover {
     text-decoration: none;
     transition: 0.3s;
   }
-  .page {
-    font-family: 'Russo One';
-    position: absolute;
-    font-size: 20px;
-    writing-mode: vertical-rl;
-    padding-top: 100px;
-    left: 90%;
-  }
+
   .box1 .main {
     background: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -306,6 +310,7 @@ header .nav .menu a:hover {
   .box1 .main .logo img {
     align-self: center;
     width: 200px;
+    filter: invert(0.5);
   }
   .box1 .main .text .student {
     font-size: 40px;
@@ -321,6 +326,7 @@ header .nav .menu a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .box2 {
     width: 100%;
     height: auto;
@@ -351,6 +357,7 @@ header .nav .menu a:hover {
     font-size: 35px;
     transition: 0.3s;
   }
+
   .box3 {
     width: 100%;
     height: auto;
@@ -376,6 +383,7 @@ header .nav .menu a:hover {
     font-size: 30px;
     list-style-type: none;
   }
+
   .box4 {
     width: 100%;
     height: auto;
@@ -420,6 +428,7 @@ header .nav .menu a:hover {
     transition: 0.3s;
     transform: scale(1.5);
   }
+
   .box5 {
     width: 100%;
     height: auto;
