@@ -55,6 +55,7 @@ header .nav .menu a:hover {
   text-decoration: none;
   transition: 0.3s;
 }
+
 .page {
   font-family: 'Russo One';
   position: absolute;
@@ -63,6 +64,7 @@ header .nav .menu a:hover {
   padding-top: 200px;
   left: 95%;
 }
+
 .box1 {
   width: 100%;
   height: auto;
@@ -70,7 +72,7 @@ header .nav .menu a:hover {
   animation: bg 90s ease infinite;
 }
 .box1 .main {
-  background: rgba(0, 0, 0, 0.);
+  background: rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,6 +103,7 @@ header .nav .menu a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .box2 {
   width: 100%;
   height: auto;
@@ -136,6 +139,7 @@ header .nav .menu a:hover {
   font-size: 45px;
   transition: 0.3s;
 }
+
 .box3 {
   width: 100%;
   height: auto;
@@ -161,6 +165,7 @@ header .nav .menu a:hover {
   font-size: 40px;
   list-style-type: none;
 }
+
 .box4 {
   width: 100%;
   height: auto;
@@ -204,6 +209,7 @@ header .nav .menu a:hover {
   transition: 0.3s;
   transform: scale(1.5);
 }
+
 .box5 {
   width: 100%;
   height: auto;
@@ -235,23 +241,25 @@ header .nav .menu a:hover {
   color: #83322c;
 }
 
-@media screen and (max-width:700px) {
+@media (max-width:700px) {
   header {
     color: #fff;
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 65px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: row;
     align-items: center;
     align-self: center;
     justify-content: space-between;
+    border-radius: 0px;
+    margin: 0;
   }
   header .logo img {
     position: relative;
-    width: 60px;
-    margin-left: 30px;
+    width: 45px;
+    margin-left: 0px;
     filter: invert(1);
   }
   header .name {
@@ -276,13 +284,21 @@ header .nav .menu a:hover {
     text-decoration: none;
     transition: 0.3s;
   }
-
+  .page {
+    font-family: 'Russo One';
+    position: absolute;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    padding-top: 100px;
+    left: 90%;
+  }
   .box1 .main {
-    background: rgba(0, 0, 0, 0.);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     column-gap: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -304,5 +320,145 @@ header .nav .menu a:hover {
     background: linear-gradient(45deg, #83322c, #4d1d19);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .box2 {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px;
+  }
+  .box2 .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .box2 .about .title {
+    font-size: 40px;
+  }
+  .box2 .about .text {
+    font-size: 30px;
+    width: 80%;
+    word-break: break-word;
+  }
+  .box2 .about .text .link:hover {
+    text-decoration: none;
+    color: #83322c;
+    font-size: 35px;
+    transition: 0.3s;
+  }
+  .box3 {
+    width: 100%;
+    height: auto;
+  }
+  .box3 .learn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .box3 .learn .title {
+    font-size: 40px;
+  }
+  .box3 .learn .list {
+    font-size: 30px;
+    list-style-type: none;
+  }
+  .box3 .learn .list li {
+    font-size: 30px;
+    list-style-type: none;
+  }
+  .box4 {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px;
+  }
+  .box4 .title {
+    padding-top: 50px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .box4 .portfolio {
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    column-gap: 60px;
+  }
+  .box4 .portfolio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 150px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    font-size: 50px;
+    overflow: hidden;
+  }
+  .box4 .portfolio .container .demo {
+    transition: 0.3s;
+  }
+  .box4 .portfolio .container .demo:hover {
+    transition: 0.3s;
+    transform: scale(1.5);
+  }
+  .box5 {
+    width: 100%;
+    height: auto;
+  }
+  .box5 .title {
+    padding-top: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .box5 .socials {
+
+    margin: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  .box5 .socials .soc1 {
+    margin: 20px;
+    padding: 10px;
+  }
+  .box5 .socials .soc1 {
+    margin: 20px;
+    padding: 10px;
+  }
+  .box5 .socials a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+  }
+  .box5 .socials a:hover {
+    transition: 0.3s;
+    font-size: 30px;
+    text-decoration: none;
+    color: #83322c;
   }
 }
