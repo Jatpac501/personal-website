@@ -5,17 +5,13 @@
   box-sizing: border-box;
   font-family: 'Russo One';
 }
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 	background: #DCDCC6;
   color: #000;
-  animation-name: appear;
-  animation-duration: 2s;
 }
-
 header {
   color: #fff;
   position: fixed;
@@ -59,7 +55,6 @@ header .nav .menu a:hover {
   text-decoration: none;
   transition: 0.3s;
 }
-
 .page {
   font-family: 'Russo One';
   position: absolute;
@@ -68,46 +63,14 @@ header .nav .menu a:hover {
   padding-top: 200px;
   left: 95%;
 }
-
 .box1 {
   width: 100%;
   height: auto;
+  background-image: url(https://source.unsplash.com/random/1920x1080/?city,night,holo);
   animation: bg 90s ease infinite;
 }
-@keyframes bg {
-  10% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?light,city);
-  }
-  20% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?landscape);
-  }
-  30% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?night,city);
-  }
-  40% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?cyberpunk,landscape);
-  }
-  50% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?moon);
-  }
-  60% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?vulcano);
-  }
-  70% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?dark,castle);
-  }
-  80% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?virtual,city);
-  }
-  90% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?holo,portain);
-  }
-  100% {
-    background-image: url(https://source.unsplash.com/random/1920x1080/?liquid,holo);
-  }
-}
 .box1 .main {
-  background: rgba(220, 220, 198, 0.1);
+  background: rgba(0, 0, 0, 0.);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -138,7 +101,6 @@ header .nav .menu a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .box2 {
   width: 100%;
   height: auto;
@@ -174,7 +136,6 @@ header .nav .menu a:hover {
   font-size: 45px;
   transition: 0.3s;
 }
-
 .box3 {
   width: 100%;
   height: auto;
@@ -200,7 +161,6 @@ header .nav .menu a:hover {
   font-size: 40px;
   list-style-type: none;
 }
-
 .box4 {
   width: 100%;
   height: auto;
@@ -244,7 +204,6 @@ header .nav .menu a:hover {
   transition: 0.3s;
   transform: scale(1.5);
 }
-
 .box5 {
   width: 100%;
   height: auto;
@@ -274,4 +233,76 @@ header .nav .menu a:hover {
   font-size: 45px;
   text-decoration: none;
   color: #83322c;
+}
+
+@media screen and (max-width:700px) {
+  header {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+  }
+  header .logo img {
+    position: relative;
+    width: 60px;
+    margin-left: 30px;
+    filter: invert(1);
+  }
+  header .name {
+    display: none;
+    position: absolute;
+    width: 95%;
+    text-align: center;
+    font-size: 40px;
+    align-self: center;
+  }
+  header .nav .menu {
+    position: relative;
+  }
+  header .nav .menu a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  header .nav .menu a:hover {
+    color: #999;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .box1 .main {
+    background: rgba(0, 0, 0, 0.);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .box1 .main .logo img {
+    align-self: center;
+    width: 200px;
+  }
+  .box1 .main .text .student {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #5c8499, #3f5c6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .box1 .main .text .name {
+    font-size: 80px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #83322c, #4d1d19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
