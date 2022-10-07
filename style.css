@@ -75,6 +75,7 @@ header .nav .menu a:hover {
 }
 .box1 .main {
   backdrop-filter: blur(4px) grayscale(30%);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -323,6 +324,7 @@ header .nav .menu a:hover {
   }
 
   .box1 .main {
+    backdrop-filter: blur(4px) grayscale(30%);
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
