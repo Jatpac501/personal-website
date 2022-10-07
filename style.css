@@ -338,7 +338,7 @@ header .nav .menu a:hover {
   .box1 .main .logo img {
     align-self: center;
     width: 200px;
-    filter: invert(0.5);
+    filter: invert(1);
   }
   .box1 .main .text .student {
     font-size: 40px;
@@ -474,7 +474,6 @@ header .nav .menu a:hover {
     justify-content: center;
   }
   .box5 .socials {
-
     margin: 10px;
     padding-top: 20px;
     display: flex;
@@ -504,4 +503,117 @@ header .nav .menu a:hover {
     text-decoration: none;
     color: #83322c;
   }
+}
+@media (min-width:720px) and (max-width:1000px) {
+	.page {
+		position: absolute;
+		font-size: 20px;
+		writing-mode: vertical-rl;
+		padding-top: 100px;
+		left: 90%;
+		z-index: 10;
+	}
+	header {
+		width: 100%;
+		border-radius: 0px;
+		margin: 0px;
+	}
+	header .name {
+		left: 20%;
+		text-align: left;
+	}
+	.box1 .main {
+		backdrop-filter: blur(4px) grayscale(30%);
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		column-gap: 50px;
+		padding-top: 170px;
+		padding-bottom: 120px;
+	}
+	.box1 .main .logo img {
+		align-self: center;
+		width: 300px;
+		filter: invert(1);
+	}
+	.box1 .main .text .student {
+		font-size: 50px;
+		font-weight: bold;
+		background: linear-gradient(45deg, #5c8499, #3f5c6b);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.box1 .main .text .name {
+		font-size: 80px;
+		font-weight: bolder;
+		background: linear-gradient(45deg, #83322c, #4d1d19);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+	.box3 .learn {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	
+	.box4 {
+		width: 100%;
+		height: auto;
+		background: rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 40px;
+	}
+	.box4 .title {
+		padding-top: 70px;
+		font-size: 50px;
+		display: flex;
+		justify-content: center;
+	}
+	.box4 .portfolio {
+		padding-top: 50px;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		column-gap: 20px;
+		text-align: center;
+		padding-bottom: 70px;
+		column-gap: 60px;
+	}
+	.box4 .portfolio .container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 10px;
+		color: rgba(255, 255, 255, 0.5);
+		width: 300px;
+		height: 150px;
+		background: rgba(0,0,0,0.5);
+		border-radius: 20px;
+		font-size: 50px;
+		overflow: hidden;
+	}
+	.box4 .portfolio .container .demo {
+		transition: 0.3s;
+	}
+	.box4 .portfolio .container .demo:hover {
+		transition: 0.3s;
+		transform: scale(1.5);
+	}
+	.box4 .portfolio .container:nth-child(2) {
+		background-size: 400px;
+	}
+	.box4 .portfolio .container:nth-child(2):hover {
+		background-size: 500px;
+	}
+	
+	.box5 .title {
+		padding-top: 50px;
+	}
+	.box5 .socials {
+		padding-bottom: 20px;
+	}
 }
