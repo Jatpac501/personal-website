@@ -10,87 +10,104 @@
   </head>
   <body>
     <header>
-      <div class="logo" id="header"><img src="icon.svg" alt="logo"></div>
-      <div class="name">H4RDFOX</div>
-      <div class="nav">
-        <div class="menu">
-            <a href="index.html#1"><i class="fa-solid fa-house"></i></a>
-            <i class="fa-solid fa-minus"></i>
-            <a href="index.html#2"><i class="fa-solid fa-user"></i></a>
-            <i class="fa-solid fa-minus"></i>
-            <a href="index.html#3"><i class="fa-solid fa-book-open"></i></a>
-            <i class="fa-solid fa-minus"></i>
-            <a href="index.html#4"><i class="fa-solid fa-briefcase"></i></a>
-            <i class="fa-solid fa-minus"></i>
-            <a href="index.html#5"><i class="fa-solid fa-phone"></i></a>
+      <div class="navbar">
+        <img class="navbar__logo" src="icon.svg" alt="logo">
+        <div class="navbar__nick">H4RDFOX</div>
+        <div class="navbar__menu">
+          <a class="navbar__button" href="index.html#1">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <a class="navbar__button" href="index.html#2">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a class="navbar__button" href="index.html#3">
+            <i class="fa-solid fa-book-open"></i>
+          </a>
+          <a class="navbar__button" href="index.html#4">
+            <i class="fa-solid fa-briefcase"></i>
+          </a>
+          <a class="navbar__button" href="index.html#5">
+            <i class="fa-solid fa-phone"></i>
+          </a>
         </div>
       </div>
     </header>
-    <section id="1" class="box1">
-      <div class="page">00001</div>
-      <div class="main">
-        <div class="logo"><img src="icon.svg" alt="logo"></div>
-        <div class="text">
-          <div class="student">Студент группы ИСдо-23</div>
-          <div class="name"><p>Улитин Евгений</p></div>
+    <main>
+      <section id="1">
+        <div class="container container_flex_row container_background_image">
+          <div class="container__number">00001</div>
+          <img class="container__logo" src="icon.svg" alt="logo">
+          <div class="container_flex_column">
+            <div class="container__text container__text_size_xl container__text_color_blue">
+              Студент группы ИСдо-23
+            </div>
+            <div class="container__text container__text_size_xxl container__text_color_red">
+              Улитин Евгений
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="2" class="box2">
-      <div class="page">00002</div>
-      <div class="about">
-        <div class="title">Приветствую,</div>
-        <div class="text">Я студент кафедры Информационных систем и программирования<br><a class="link" href="http://kei.ulstu.ru" target="_blank">Колледжа экономики и информатики им. А.Н. Афанасьева</a>.</div>
-      </div>
-    </section>
-    <section id="3" class="box3">
-      <div class="page">00003</div>
-      <div class="learn">
-        <div class="title">На данный момент я изучаю:</div>
-      <div class="list">
-        Программирование:
-        <ul>
-          <li><i class="fa-brands fa-python"></i> Python</li>
-          <li><i class="fa-brands fa-html5"></i> HTML</li>
-          <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
-          <li><i class="fa-brands fa-square-js"></i> JavaScript</li>
-        </ul>
-        Дизайн:
-        <ul>
-          <li><i class="fa-solid fa-image"></i> Photoshop</li>
-          <li><i class="fa-solid fa-pen-nib"></i> Illustrator</li>
-        </ul>
-      </div>
-    </section>
-    <section id="4" class="box4">
-      <div class="page">00004</div>
-      <div class="title">Мои работы</div>
-      <div class="portfolio">
+      </section>
+      <section id="2">
+        <div class="container container_type_dark">
+          <div class="container__number">00002</div>
+          <div class="container__text container__text_size_xl">Приветствую,</div>
+          <div class="container__text">
+            Я студент кафедры Информационных систем и программирования<br>
+            <a class="container__link container__text_color_red" href="http://kei.ulstu.ru" target="_blank">Колледжа экономики и информатики им. А.Н. Афанасьева</a>.
+          </div>
+        </div>
+      </section>
+      <section id="3">
         <div class="container">
-          <div class="demo">Скоро</div>
+          <div class="container__number">00003</div>
+          <div class="container__text container__text_size_xl">На данный момент я изучаю:</div>
+          <ul class="container__list">
+           <div class="container__text">Программирование:</div>
+           <li class="container__text container__text_size_s"><i class="fa-brands fa-python"></i> Python</li>
+           <li class="container__text container__text_size_s"><i class="fa-brands fa-html5"></i> HTML</li>
+           <li class="container__text container__text_size_s"><i class="fa-brands fa-css3-alt"></i> CSS</li>
+           <li class="container__text container__text_size_s"><i class="fa-brands fa-square-js"></i> JavaScript</li>
+          </ul>
+          <ul class="container__list">
+            <div class="container__text">Дизайн:</div>
+            <li class="container__text container__text_size_s"><i class="fa-solid fa-image"></i> Photoshop</li>
+            <li class="container__text container__text_size_s"><i class="fa-solid fa-pen-nib"></i> Illustrator</li>
+          </ul>
         </div>
+      </section>
+      <section id="4">
+        <div class="container container_type_dark">
+          <div class="container__number">00004</div>
+          <div class="container__text container__text_size_xl">Мои работы</div>
+          <div class="container_flex_row container_items_align">
+            <div class="container__box">
+              <div class="container__box-name">Скоро</div>
+            </div>
+            <div class="container__box">
+              <div class="container__box-name">Скоро</div>
+            </div>
+            <div class="container__box">
+              <div class="container__box-name">Скоро</div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <section id="5">
         <div class="container">
-          <div class="pj1"><a href="https://jatpac501.github.io/Visitka/" target="_blank">Визитка</a></div>
+          <div class="container__number">00005</div>
+          <div class="container__text container__text_size_xl">Связь со мной</div>
+          <ul class="container__list">
+            <li class="container__text"><i class="fa-solid fa-phone"></i> Телефон: <a class="container__link" href="tel:+79991234567">+7(999)123-45-65</a></li>
+            <li class="container__text"><i class="fa-solid fa-envelope"></i> Почта: <a class="container__link" href="mailto:h4rdfox@vk.com">h4rdfox@vk.com</a></li>
+          </ul>
+          <ul class="container__list">
+            <li class="container__text"><a class="container__link" href="https://vk.com/h4rdfox" target="_blank"><i class="fa-brands fa-vk button"></i> ВКонтакте</a></li>
+            <li class="container__text"><a class="container__link" href="https://t.me/h4rdfox" target="_blank"><i class="fa-brands fa-telegram button"></i> Телеграм</a></li>
+            <li class="container__text"><a class="container__link" href="https://steamcommunity.com/id/k1w1" target="_blank"><i class="fa-brands fa-square-steam button"></i> Стим</a></li>
+          </ul>
         </div>
-        <div class="container">
-          <div class="demo">Скоро</div>
-        </div>
-      </div>
-    </section>
-    <section id="5" class="box5">
-      <div class="page">00005</div>
-      <div class="title">Связь со мной</div>
-      <div class="socials">
-        <div class="soc1">
-            <div class="tel"><div class="pcview"><i class="fa-solid fa-phone"></i> Телефон:</div> <a class="button info-tel" href="tel:+79991234567">+7(999)123-45-65</a></div>
-            <div class="mail"><div class="pcview"><i class="fa-solid fa-envelope"></i> Почта:</div> <a class="button info-mail" href="mailto:h4rdfox@vk.com">h4rdfox@vk.com</a></div>
-        </div>
-        <div class="soc2">
-          <div class="vk"><a class="button" href="https://vk.com/h4rdfox" target="_blank"><i class="fa-brands fa-vk button"></i> ВКонтакте</a></div>
-          <div class="tg"><a class="button" href="https://t.me/h4rdfox" target="_blank"><i class="fa-brands fa-telegram button"></i> Телеграм</a></div>
-          <div class="steam"><a class="button" href="https://steamcommunity.com/id/k1w1" target="_blank"><i class="fa-brands fa-square-steam button"></i> Стим</a></div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </footer>
   </body>
 </html>
