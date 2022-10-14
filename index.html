@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>h4rdfox</title>
-  <link href="style.css" rel="stylesheet">
-  <link rel="icon" href="icon.svg">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/icon.svg">
+  <script src="assets/scripts/main.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-<header>
+<header class="navigation">
   <div class="navbar">
-    <img class="navbar__logo" src="icon.svg" alt="logo">
+    <img class="navbar__logo" src="assets/images/icon.svg" alt="logo">
     <div class="navbar__text">H4RDFOX</div>
     <div class="navbar__menu">
       <a class="navbar__button" href="index.html#1">
@@ -33,10 +34,10 @@
   </div>
 </header>
 <main>
-  <section class="section" id="1">
+  <section class="section-main" id="1">
     <div class="container container_flex_row container_background_image">
       <div class="container__number">00001</div>
-      <img class="container__logo" src="icon.svg" alt="logo">
+      <img class="container__logo" src="assets/images/icon.svg" alt="logo">
       <div class="container_flex_column">
         <div class="container__text container__text_size_xl container__text_color_blue">
           Студент группы ИСдо-23
@@ -47,7 +48,7 @@
       </div>
     </div>
   </section>
-  <section class="section" id="2">
+  <section class="section-about" id="2">
     <div class="container container_type_dark">
       <div class="container__number">00002</div>
       <div class="container__text container__text_size_xl">Приветствую,</div>
@@ -57,25 +58,25 @@
       </div>
     </div>
   </section>
-  <section class="section" id="3">
+  <section class="section-learn" id="3">
     <div class="container">
       <div class="container__number">00003</div>
       <div class="container__text container__text_size_xl">На данный момент я изучаю:</div>
       <ul class="container__list">
-        <div class="container__text">Программирование:</div>
+        <li class="container__text">Программирование:</li>
         <li class="container__text container__text_size_s"><i class="fa-brands fa-python"></i> Python</li>
         <li class="container__text container__text_size_s"><i class="fa-brands fa-html5"></i> HTML</li>
         <li class="container__text container__text_size_s"><i class="fa-brands fa-css3-alt"></i> CSS</li>
         <li class="container__text container__text_size_s"><i class="fa-brands fa-square-js"></i> JavaScript</li>
       </ul>
       <ul class="container__list">
-        <div class="container__text">Дизайн:</div>
+        <li class="container__text">Дизайн:</li>
         <li class="container__text container__text_size_s"><i class="fa-solid fa-image"></i> Photoshop</li>
         <li class="container__text container__text_size_s"><i class="fa-solid fa-pen-nib"></i> Illustrator</li>
       </ul>
     </div>
   </section>
-  <section class="section" id="4">
+  <section class="section-projects" id="4">
     <div class="container container_type_dark">
       <div class="container__number">00004</div>
       <div class="container__text container__text_size_xl">Мои работы</div>
@@ -92,9 +93,7 @@
       </div>
     </div>
   </section>
-</main>
-<footer>
-  <section class="section" id="5">
+  <section class="section-contacts" id="5">
     <div class="container">
       <div class="container__number">00005</div>
       <div class="container__text container__text_size_xl">Связь со мной</div>
@@ -109,6 +108,17 @@
       </ul>
     </div>
   </section>
+</main>
+<footer>
+  <div class="container container_type_dark">
+    <button type="button" onmouseover="InfoPage()">DevInfo</button>
+    <p id="InfoPage" class="container__text"></p>
+    <script>
+      function InfoPage() {
+        document.getElementById('InfoPage').innerHTML = InfoTitle + '<br>' + 'JS -- pass' + '<br>' + InfoScript;
+      }
+    </script>
+  </div>
 </footer>
 </body>
 </html>
