@@ -32,6 +32,7 @@
       </a>
     </div>
   </div>
+
 </header>
 <main>
   <section class="section-main" id="1">
@@ -39,10 +40,10 @@
       <div class="container__number">00001</div>
       <img class="container__logo" src="assets/images/icon.svg" alt="logo">
       <div class="container_flex_column">
-        <div class="container__text container__text_size_xl container__text_color_blue">
+        <div class="container__text container__text_size_xl container__text_color_leather">
           Студент группы ИСдо-23
         </div>
-        <div class="container__text container__text_size_xxl container__text_color_red">
+        <div class="container__text container__text_size_xxl container__text_color_leather">
           Улитин Евгений
         </div>
       </div>
@@ -51,11 +52,27 @@
   <section class="section-about" id="2">
     <div class="container container_type_dark">
       <div class="container__number">00002</div>
-      <div class="container__text container__text_size_xl">Приветствую,</div>
-      <div class="container__text">
-        Я студент кафедры Информационных систем и программирования<br>
-        <a class="container__link container__text_color_red" href="http://kei.ulstu.ru" target="_blank">Колледжа экономики и информатики им. А.Н. Афанасьева</a>.
-      </div>
+      <div class="container__text container__text_size_xl">Профиль</div>
+      <div class="container__boxes">
+        <div class="container__box section-about__container__box">
+          <div class="container__box-title section-about__container__box-title">О себе</div>
+          <div class="container__box-text section-about__container__box-text">Я студент кафедры Информационных систем и программирования
+            Колледжа экономики и информатики им. А.Н. Афанасьева.</div>
+        </div>
+        <div class="container__box section-about__container__box">
+          <div class="container__box-title section-about__container__box-title">Аватар</div>
+          <img class="container__box-img section-about__container__box-text" src="/assets/images/avatar.jpg"></img>
+        </div>
+        <div class="container__box section-about__container__box">
+          <div class="container__box-title section-about__container__box-title">Детали</div>
+          <div class="container__box-text section-about__container__box-text">
+            Имя: Евгений.<br>
+            Возраст: 17 лет.<br>
+            Город: Ульяновск.<br>
+            Обучение: КЭИ (2 курс).<br>
+            Направление: Веб-разработчик.
+        </div>
+      </div>    
     </div>
   </section>
   <section class="section-learn" id="3">
@@ -110,14 +127,9 @@
   </section>
 </main>
 <footer>
-  <div class="container container_type_dark">
-    <button type="button" onmouseover="InfoPage()">DevInfo</button>
-    <p id="InfoPage" class="container__text"></p>
-    <script>
-      function InfoPage() {
-        document.getElementById('InfoPage').innerHTML = InfoTitle + '<br>' + 'JS -- pass' + '<br>' + InfoScript;
-      }
-    </script>
+  <div class="pageup">
+    <a class="pageup__button" href="index.html#1"><img class="pageup__img" src="assets/images/up-arrow.svg" alt="up"></a>
+    <a class="pageup_text" href="index.html#1">Наверх</a>
   </div>
 </footer>
 </body>
