@@ -272,7 +272,8 @@ body {
     font-size: 40px;
   }
   .container__box {
-    width: 100%;
+    margin: 15px;
+    width: 90%;
     height: 200px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -290,7 +291,8 @@ body {
     justify-content: center;
   }
   .section-about__container__box {
-    width: auto;
+    margin: 15px;
+    width: 90%;
     height: auto;
     padding: 15px;
     display: flex;
