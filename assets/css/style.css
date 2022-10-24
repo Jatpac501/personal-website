@@ -80,7 +80,7 @@ body {
   width: 220px;
   border-radius: 20px;
   transition: .5s;
-  opacity: .8;
+  opacity: 1;
 }
 .section {
   width: 100%;
